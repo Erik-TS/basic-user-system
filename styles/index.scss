@@ -1,6 +1,6 @@
 body {
+    background-color: rgb(235, 235, 235);
     margin: 0;
-    background-color: aliceblue;
 }
 
 form {
@@ -8,11 +8,11 @@ form {
     border-radius: 0.3rem;
     background-color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
     height: 30vh;
     margin: 10rem auto 0 auto;
-    width: 20vw;
-    font-weight: 700;
     padding: 5vh 0;
+    width: 20vw;
 
     label {
         display: block;
@@ -21,31 +21,79 @@ form {
 
     input {
         border-radius: 0.3rem;
-        height: 4vh;
         border: 1px solid gray;
+        height: 4vh;
         outline: none;
         width: 100%;
     }
 
     button {
-        display: block;
         background-color: rgb(187, 212, 43);
-        font-weight: 700;
-        color: white;
-        padding: 1vh;
-        width: 100%;
-        margin-top: 5vh;
         border: none;
         border-radius: 0.3rem;
+        color: white;
+        display: block;
+        font-weight: 700;
+        margin-top: 5vh;
+        padding: 1vh;
+        width: 100%;
     }
 
     .formBox {
-        width: 18vw;
         margin: 0 auto;
+        width: 18vw;
+    }
+}
+
+.logOut {
+    display: flex;
+    justify-content: center;
+
+    input {
+        background-color: rgb(249, 79, 79);
+        border: none;
+        border-radius: 0.3rem;
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin-top: 1rem;
+        padding: 0.5rem 0;
+        width: 20vw;
     }
 }
 
 .fullpageContainer {
-    width: 100vw;
     height: 100%;
+    width: 100vw;
+}
+
+.userDashboard {
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 0.3rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 5rem auto 0 auto;
+    width: fit-content;
+
+    h1 {
+        border-bottom: 1px solid gray;
+        margin: 0;
+        padding: 0.5rem;
+        text-align: center;
+    }
+
+    .col {
+        display: inline-block;
+    }
+
+    .left {
+        text-align: start;
+        padding: 0 0.3rem 0 0.5rem;
+    }
+
+    .right {
+        text-align: end;
+        padding: 0 0.5rem 0 0.3rem;
+    }
 }
